@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Nov  1 11:15:34 2025
+# Process ID         : 1948
+# Current directory  : C:/Users/ratho/Desktop/Verilog_projects/1_syncfifo_verilog
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3788 C:\Users\ratho\Desktop\Verilog_projects\1_syncfifo_verilog\sync_fifo_project.xpr
+# Log file           : C:/Users/ratho/Desktop/Verilog_projects/1_syncfifo_verilog/vivado.log
+# Journal file       : C:/Users/ratho/Desktop/Verilog_projects/1_syncfifo_verilog\vivado.jou
+# Running On         : DESKTOP-A6MEONG
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency      : 2400 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17012 MB
+# Swap memory        : 15032 MB
+# Total Virtual      : 32044 MB
+# Available Virtual  : 20885 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ratho/Desktop/Verilog_projects/1_syncfifo_verilog/sync_fifo_project.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/ratho/Desktop/Verilog_projects/1_syncfifo_verilog/sync_fifo_project.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ratho/Desktop/Verilog_projects/1_syncfifo_verilog/sync_fifo_project.srcs/sim_1/new/test_bench.v w ]
+add_files -fileset sim_1 C:/Users/ratho/Desktop/Verilog_projects/1_syncfifo_verilog/sync_fifo_project.srcs/sim_1/new/test_bench.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+set_property file_type SystemVerilog [get_files  C:/Users/ratho/Desktop/Verilog_projects/1_syncfifo_verilog/sync_fifo_project.srcs/sim_1/new/test_bench.v]
+launch_simulation
+source test_bench.tcl
+run 10 ms
+close_sim
+launch_simulation
+source test_bench.tcl
+run 10 us
+close_sim
+launch_simulation
+source test_bench.tcl
+run 10 us
+run 10 us
+run all
+run 10 us
+close_sim
+launch_simulation
+source test_bench.tcl
+run 10 us
+close_sim
+update_compile_order -fileset sim_1
+launch_simulation
+source sync_fifo_top.tcl
+run 10 us
+close_sim
+update_compile_order -fileset sim_1
+launch_simulation
+source test_bench.tcl
+run 10 us
+close_sim
+launch_simulation
+source test_bench.tcl
+run 10 us
+set_property -name {xsim.simulate.runtime} -value {100us} -objects [get_filesets sim_1]
+relaunch_sim
+close_sim
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+set_param editor.name {Visual Studio Code}
+set_param editor.name {Visual Studio Code}
+version
+gui_text_editor
+set_param editor.gui_text_editor {code --reuse-window --goto}
