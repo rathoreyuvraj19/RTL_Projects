@@ -44,7 +44,7 @@ module top_traffic_light_controller #(
     
     //------Internal Signals----
     reg [2:0]  r_state,r_next_state;
-    reg [31:0] r_counter; //Counts upto 10 seconds 
+    integer r_counter; //Counts upto 10 seconds 
     
     //------Sequential Next State Logic-----
     always @(posedge i_clk or posedge i_reset)
@@ -59,13 +59,13 @@ module top_traffic_light_controller #(
                 r_state <= r_next_state;
                
                 //Increment Counter 
-                if(r_state == S_NS_GREEN) begin
-                    if(r_counter <= c_GREEN_COUNT)
+                if(r_state == S_NS_GREEN || r_state == S_EW_GREEN) begin
+                    if(r_counter < c_GREEN_COUNT)
                         r_counter <= r_counter + 1'b1;
                     else
                         r_counter <= 0;
                 end else begin// State is yellow
-                    if(r_counter <= c_YELLOW_COUNT)
+                    if(r_counter < c_YELLOW_COUNT)
                         r_counter <= r_counter + 1'b1;
                     else
                         r_counter <= 0;
@@ -76,7 +76,7 @@ module top_traffic_light_controller #(
     //----Next State Logic-----
     always @(*)
     begin
-    r_next_state <= r_state;
+    r_next_state = r_state;
         case (r_state)
             S_NS_GREEN   : begin
                             if (r_counter == c_GREEN_COUNT)

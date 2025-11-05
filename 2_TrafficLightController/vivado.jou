@@ -1,0 +1,175 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Nov  5 13:21:11 2025
+# Process ID         : 14820
+# Current directory  : C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent8324 C:\Users\ratho\Desktop\Verilog_projects\2_TrafficLightController\2_TrafficLightController.xpr
+# Log file           : C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/vivado.log
+# Journal file       : C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController\vivado.jou
+# Running On         : DESKTOP-A6MEONG
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency      : 2400 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17012 MB
+# Swap memory        : 15032 MB
+# Total Virtual      : 32044 MB
+# Available Virtual  : 8870 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sim_1/new/tb.v w ]
+add_files -fileset sim_1 C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sim_1/new/tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property file_type SystemVerilog [get_files  C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sim_1/new/tb.v]
+launch_simulation
+launch_simulation
+source tb.tcl
+run 10 ns
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run 10 ms
+run 10 ms
+relaunch_sim
+run 10 ms
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg
+set_property xsim.view C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg [get_filesets sim_1]
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb/DUT/i_clk}} {{/tb/DUT/i_reset}} {{/tb/DUT/o_ns_lights}} {{/tb/DUT/o_ew_lights}} {{/tb/DUT/r_state}} {{/tb/DUT/r_next_state}} {{/tb/DUT/r_counter}} {{/tb/DUT/c_INPUT_FREQ_HZ}} {{/tb/DUT/c_GREEN_TIME}} {{/tb/DUT/c_YELLOW_TIME}} {{/tb/DUT/c_GREEN_COUNT}} {{/tb/DUT/c_YELLOW_COUNT}} {{/tb/DUT/S_NS_GREEN}} {{/tb/DUT/S_NS_YELLOW}} {{/tb/DUT/S_EW_GREEN}} {{/tb/DUT/S_EW_YELLOW}} 
+relaunch_sim
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
+run 10 ms
+relaunch_sim
+run 10 ms
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
+relaunch_sim
+run 20 s
+run all
+relaunch_sim
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
+close_sim
+set_property file_type SystemVerilog [get_files  C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v]
+launch_simulation
+open_wave_config C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg
+source tb.tcl
+run 20 s
+run all
+add_bp {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v} 83
+relaunch_sim
+run all
+add_bp {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v} 59
+run all
+relaunch_sim
+remove_bps -file {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v} -line 59
+run all
+add_bp {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v} 59
+add_bp {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sim_1/new/tb.v} 58
+run all
+run all
+run all
+remove_bps -file {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sim_1/new/tb.v} -line 58
+run all
+add_bp {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v} 85
+step
+step
+step
+remove_bps -file {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v} -line 59
+relaunch_sim
+run all
+remove_bps -file {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v} -line 85
+run all
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+run all
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+run all
+run all
+remove_bps -file {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v} -line 83
+add_bp {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v} 84
+run all
+relaunch_sim
+run all
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg
+source tb.tcl
+run all
+add_bp {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v} 83
+run all
+relaunch_sim
+run all
+run all
+run all
+remove_bps -file {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/2_TrafficLightController.srcs/sources_1/new/top_traffic_light_controller.v} -line 83
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+run 20 s
+run all
+relaunch_sim
+run all
+save_wave_config {C:/Users/ratho/Desktop/Verilog_projects/2_TrafficLightController/tb_behav.wcfg}
